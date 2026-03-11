@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Incheon Airport · PTE World 2026</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <span class="logo-tag">ICN</span>
+        <span class="logo-text">PTE World 2026 · Interactive Directory</span>
+      </div>
+      <div class="header-hint">
+        <span class="hint-dot"></span>
+        Click a product to view details
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <main class="layout">
+
+    <!-- LEFT: Newsletter Image + Hotspots -->
+    <section class="panel panel-left" id="newsletter-panel">
+      <div class="panel-label">NEWSLETTER</div>
+
+      <div class="image-wrapper" id="imageWrapper">
+        <img
+          src="images/newsletter.jpg"
+          alt="PTE World 2026 Newsletter"
+          id="newsletterImg"
+          draggable="false"
+        />
+        <!-- Hotspots injected by script.js -->
+      </div>
+
+      <!-- Legend -->
+      <div class="legend" id="legend"></div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-icon">⟶</div>
+      <div class="divider-line"></div>
+    </div>
+
+    <!-- RIGHT: PDF Viewer -->
+    <section class="panel panel-right" id="pdf-panel">
+      <div class="panel-label">PRODUCT DETAIL</div>
+
+      <div class="pdf-placeholder" id="pdfPlaceholder">
+        <div class="placeholder-inner">
+          <div class="placeholder-icon">◈</div>
+          <p class="placeholder-title">Select a product</p>
+          <p class="placeholder-sub">Click any highlighted area on the newsletter to view the product detail page.</p>
+        </div>
+      </div>
+
+      <div id="productViewer" style="display:none;">
+        <img id="productImg" src="" alt="Product Detail" />
+      </div>
+
+      <div class="pdf-nav" id="pdfNav" style="display:none;">
+        <span id="activeLabel" class="active-label"></span>
+        <button class="nav-btn" id="btnClose" title="Close">✕ Close</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
