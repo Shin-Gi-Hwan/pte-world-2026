@@ -26,7 +26,6 @@
   <main class="layout-single">
     <section class="panel-center">
       <div class="panel-label">NEWSLETTER</div>
-
       <div class="image-wrapper" id="imageWrapper">
         <img
           src="images/newsletter.jpg"
@@ -35,10 +34,17 @@
           draggable="false"
         />
       </div>
-
       <div class="legend" id="legend"></div>
     </section>
   </main>
+
+  <!-- 팝업 오버레이 -->
+  <div class="popup-overlay" id="popupOverlay">
+    <div class="popup-box" id="popupBox">
+      <button class="popup-close" id="popupClose">✕</button>
+      <img id="popupImg" src="" alt="Product Detail" />
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
