@@ -102,15 +102,16 @@ html, body {
 }
 
 /* ── Layout ──────────────────────────────────────────────── */
-.layout {
-  display: grid;
-  grid-template-columns: 1fr 48px 1fr;
-  gap: 0;
-  max-width: 1600px;
+.layout-single {
+  max-width: 720px;
   margin: 0 auto;
-  padding: 28px 24px 40px;
-  min-height: calc(100vh - 53px);
-  align-items: start;
+  padding: 28px 24px 60px;
+}
+
+.panel-center {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 /* ── Panel ──────────────────────────────────────────────── */
@@ -158,9 +159,9 @@ html, body {
   border-radius: 4px;
   background: transparent;
   transition:
-          background var(--transition),
-          border-color var(--transition),
-          box-shadow var(--transition);
+    background var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
   /* subtle scan-line effect on hover */
 }
 
@@ -169,11 +170,11 @@ html, body {
   position: absolute;
   inset: 0;
   background: repeating-linear-gradient(
-          0deg,
-          transparent,
-          transparent 3px,
-          rgba(26,155,150,0.04) 3px,
-          rgba(26,155,150,0.04) 4px
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(26,155,150,0.04) 3px,
+    rgba(26,155,150,0.04) 4px
   );
   opacity: 0;
   transition: opacity var(--transition);
